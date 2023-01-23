@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Google Lens Like</string>
+    <string name="get_search_results">Get Search Results</string>
+    <string name="snap">Snap</string>
+    <string name="title">Title</string>
+    <string name="snippet">Snippet</string>
+    <string name="description">Description</string>
+</resources>

@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'com.android.tools.build:gradle:7.3.1'
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.3.1' apply false
+    id 'com.android.library' version '7.3.1' apply false
+}
+allprojects {
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+//-------------------------------
+//
+//        repositories {
+//
+//            google()
+//            mavenCentral()
+//            maven {
+//                url 'https://maven.fabric.io/public'
+//            }
+//        }
+//dependencies {
+//    classpath 'com.android.tools.build:gradle:7.4.0'
+//    classpath 'com.google.gms:google-services:4.3.14'// // google-services plugin it should be latest if you are using firebase version 16.0 +
+//
+//}
+//allprojects {
+//    repositories {
+//        google()// add it to top instead of bottom or somewhere in middle
+//        mavenLocal()
+//        mavenCentral()
+//        maven {
+//            url 'https://maven.google.com'
+//        }
+//
+//        maven {
+//            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+//            url "$rootDir/../node_modules/react-native/android"
+//        }
+//
+//    }
+//}
