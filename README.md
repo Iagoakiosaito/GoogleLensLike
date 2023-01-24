@@ -5,5 +5,5 @@ This project was originally going to use the **Firebase Cloud solution for image
 
 I made this project because i want to learn more about the Firebase tools, which my review to then is: i liked. 
 
-#Project demo
+# Project demo
 ![](https://github.com/Iagoakiosaito/GoogleLensLike/blob/main/demo/Demo%20Google%20Lens%20Like.gif)
