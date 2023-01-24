@@ -99,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getSearchResults(String searchQuery) {
-        String apiKey = "c2731a96481d310cb8c954c6a2686fdeaff28143a78448405d4ec364b2d5f02d";
+        //Important: Here use your own SerpApi project api key, available in https://serpapi.com/users/sign_in
+        String apiKey = SecretApiKey.apiKey;
         String url = "https://serpapi.com/search.json?engine=google&q="+searchQuery+"&location=Seattle-Tacoma,+WA,+Washington,+United+States&hl=en&gl=us&google_domain=google.com&api_key="+apiKey;
 
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -113,13 +114,13 @@ public class MainActivity extends AppCompatActivity {
                         if (organicObj.has("title")) {
                             title = organicObj.getString("title");
 
-                        } else if (organicObj.has("link")) {
+                        } if (organicObj.has("link")) {
                             link = organicObj.getString("link");
 
-                        } else if (organicObj.has("displayed_link")) {
+                        } if (organicObj.has("displayed_link")) {
                             displayedLink = organicObj.getString("displayed_link");
 
-                        } else if (organicObj.has("snippet")) {
+                        } if (organicObj.has("snippet")) {
                             snippet = organicObj.getString("snippet");
                         }
                         searchRecyclerViewModalArrayList.add(new SearchRecyclerViewModal(title, link, displayedLink, snippet));
